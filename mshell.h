@@ -10,13 +10,9 @@
 #include <string.h>
 #include <sys/wait.h>
 
-#define MAX_ARGS 64
-#define MAX_INPUT_SIZE 1024
 
 void print_prompt(void);
 void m_print(const char *string_prompt);
 void read_cmd(char *prompt_command, size_t prompt_size);
-void exec_command(const char *prompt_command, char *arguments[]);
-void tokenize_input(char *prompt_command, char *arguments[]);
-
+void exec_command(const char *prompt_command);
 #endif /* MSHELL_H */
